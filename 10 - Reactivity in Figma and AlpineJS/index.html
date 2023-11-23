@@ -12,7 +12,7 @@
     <div x-data="{quantity: 0}" class="flex p-10 flex-col items-center justify-center gap-8 h-screen">
       <div class="flex gap-8 justify-center items-center">
         <button
-          x-on:click="quantity--"
+          @click="quantity--"
           class="h-11 w-11 rounded-full bg-slate-100 hover:bg-slate-200"
         >
           ➖
@@ -22,14 +22,14 @@
           class="text-9xl font-semibold text-slate-800 w-40 text-center"
         ></h1>
         <button
-          x-on:click="quantity++"
+          @click="quantity++"
           class="h-11 w-11 rounded-full bg-slate-100 hover:bg-slate-200"
         >
           ➕
         </button>
       </div>
       <button
-          x-on:click="quantity = 0"
+          @click="quantity = 0"
           class="h-11 px-6 rounded-full bg-red-700 text-slate-50"
         >
           Reset
