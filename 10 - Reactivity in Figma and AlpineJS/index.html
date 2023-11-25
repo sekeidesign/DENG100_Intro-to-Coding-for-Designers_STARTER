@@ -3,40 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>07 | Reactivity in Figma and AlpineJS</title>
+    <title>10 | Reactivity in Figma and AlpineJS</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
   </head>
   <body>
-    <div x-data="{quantity: 0}" class="flex p-10 flex-col items-center justify-center gap-8 h-screen">
-      <div class="flex gap-8 justify-center items-center">
+    <div class="flex p-10 flex-col items-center justify-center gap-6 h-screen">
+      <div class="flex items-center justify-center gap-8">
         <button
-          @click="quantity--"
+          onclick="subtract()"
           class="h-11 w-11 rounded-full bg-slate-100 hover:bg-slate-200"
         >
           ➖
         </button>
         <h1
-          x-text="quantity"
-          class="text-9xl font-semibold text-slate-800 w-40 text-center"
+          id="largeQuantity"
+          class="text-9xl font-semibold text-slate-800"
         ></h1>
         <button
-          @click="quantity++"
+          onclick="add()"
           class="h-11 w-11 rounded-full bg-slate-100 hover:bg-slate-200"
         >
           ➕
         </button>
       </div>
-      <button
-          @click="quantity = 0"
-          class="h-11 px-6 rounded-full bg-red-700 text-slate-50"
-        >
-          Reset
-        </button>
       <p class="fixed top-6 right-6">
-        Your quantity is: <span x-text="quantity"></span>
+        Your quantity is: <span id="smallQuantity"></span>
       </p>
     </div>
+
+    <script>
+      // Set a quantity variable to 0
+      let quantity = 0;
+
+      // Create variables for the elements we want to update
+      const smallQuantity = document.getElementById('smallQuantity');
+      const largeQuantity = document.getElementById('largeQuantity');
+
+      // Set the initial innerText values
+      smallQuantity.innerText = quantity;
+      largeQuantity.innerText = quantity;
+
+      // Create functions to add and subtract from the quantity
+      const add = () => {
+        quantity = quantity + 1;
+        smallQuantity.innerText = quantity;
+        largeQuantity.innerText = quantity;
+      };
+      const subtract = () => {
+        quantity = quantity - 1;
+        smallQuantity.innerText = quantity;
+        largeQuantity.innerText = quantity;
+      };
+    </script>
   </body>
 </html>

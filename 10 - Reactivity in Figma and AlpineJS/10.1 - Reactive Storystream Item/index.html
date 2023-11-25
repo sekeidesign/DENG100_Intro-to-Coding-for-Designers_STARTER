@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>05.2 | Storystream Item</title>
+    <title>10.1 | Reactive Storystream Item</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,13 +19,6 @@
         font-family: 'Space Mono', serif;
       }
     </style>
-    <script>
-      const copyToClipboard = () => {
-        navigator.clipboard.writeText(window.location.href);
-        console.log('Link copied!');
-      };
-      copyToClipboard();
-    </script>
   </head>
   <body>
     <div
@@ -58,8 +47,8 @@
           <a href="#">
             <img
               src="./assets/comments.svg"
-              class="w-6"
               alt="The comments icon"
+              class="w-6"
             />
           </a>
         </div>
@@ -87,24 +76,15 @@
               </div>
               <img
                 src="./assets/blob.svg"
-                class="absolute -rotate-90 origin-top-left mt-6 w-6"
+                class="absolute -rotate-90 origin-top-left mt-6"
                 alt=""
               />
             </div>
             <span class="font-bold text-slate-300">Jay Peters</span>
             <span class="text-slate-400">Two hours ago</span>
             <button
-              x-data="{ toastVisible: false }"
-              @click="copyToClipboard(); toastVisible = true; setTimeout(() => toastVisible = false, 800);"
-              class="rounded hover:bg-slate-800 p-1 text-slate-600 hover:text-slate-200 relative"
+              class="rounded hover:bg-slate-800 p-1 text-slate-600 hover:text-slate-200"
             >
-              <div
-                x-show="toastVisible"
-                x-transition
-                class="top-0 left-0 bg-slate-800 rounded py-1 px-2 absolute shadow-lg text-green-400 text-xs font-sans font-medium whitespace-nowrap -mt-8"
-              >
-                Link copied!
-              </div>
               <img src="./assets/link.svg" alt="A link icon" />
             </button>
           </div>

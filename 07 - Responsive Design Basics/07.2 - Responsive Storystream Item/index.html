@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>05.2 | Storystream Item</title>
+    <title>07.2 | Responsive Storystream Item</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +24,9 @@
     <div
       class="w-screen h-screen p-5 flex items-center justify-center bg-slate-900"
     >
-      <div class="max-w-lg flex border-b border-slate-800 md:border-none py-4">
+      <div class="max-w-lg flex">
         <!-- Left column -->
-        <div class="hidden md:flex flex-col gap-3 w-10 shrink-0">
+        <div class="flex flex-col gap-3 w-10 shrink-0">
           <!-- Metaball indicator -->
           <div class="flex flex-col gap-1">
             <div
@@ -37,59 +37,27 @@
             <div class="w-6 h-6 flex items-center justify-center relative z-10">
               <img
                 src="./assets/youtube.svg"
-                alt="The YouTube logo"
                 class="w-3"
+                alt="The YouTube logo"
               />
             </div>
-            <img src="./assets/blob.svg" class="w-6 absolute" alt="" />
+            <img src="./assets/blob.svg" alt="" class="w-6 absolute" />
           </div>
           <!-- Comment link -->
           <a href="#">
-            <img
-              src="./assets/comments.svg"
-              alt="The comments icon"
-              class="w-6"
-            />
+            <img src="./assets/comments.svg" class="w-6" alt="A comment icon" />
           </a>
         </div>
         <!-- Right column -->
         <div class="flex flex-col gap-1 py-1">
           <!-- Date, time, link -->
-          <div
-            class="flex gap-2 font-space-mono text-xs uppercase items-center"
-          >
-            <!-- Metaball indicator -->
-            <div class="flex md:hidden gap-1">
-              <div
-                class="w-6 h-6 flex items-center justify-center text-black font-space-mono font-bold text-xs relative z-10"
-              >
-                J
-              </div>
-              <div
-                class="w-6 h-6 flex items-center justify-center relative z-10"
-              >
-                <img
-                  src="./assets/youtube.svg"
-                  alt="The YouTube logo"
-                  class="w-3"
-                />
-              </div>
-              <img
-                src="./assets/blob.svg"
-                class="absolute -rotate-90 origin-top-left mt-6"
-                alt=""
-              />
-            </div>
+          <div class="flex gap-2 font-space-mono text-xs uppercase">
             <span class="font-bold text-slate-300">Jay Peters</span>
             <span class="text-slate-400">Two hours ago</span>
-            <button
-              class="rounded hover:bg-slate-800 p-1 text-slate-600 hover:text-slate-200"
-            >
-              <img src="./assets/link.svg" alt="A link icon" />
-            </button>
+            <img src="./assets/link.svg" class="w-4" alt="A link icon" />
           </div>
           <!-- Post content -->
-          <div class="text-sm md:text-base">
+          <div>
             <span class="text-slate-100 font-space font-bold"
               >Watch the Vergecast crew figure out the future of Sonos, Search,
               VR, and the Pixel.</span
@@ -105,24 +73,13 @@
           <iframe
             width="100%"
             height="100%"
-            class="aspect-video my-4"
+            class="aspect-video mt-4"
             src="https://www.youtube.com/embed/58VSTFGRYbQ?si=AYnNk9yYbDjql-yd"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <!-- Comment link -->
-          <a href="#" class="flex md:hidden items-center gap-2">
-            <img
-              src="./assets/comments.svg"
-              class="w-6"
-              alt="The comments icon"
-            />
-            <span class="font-space-mono text-xs uppercase text-slate-400">
-              16 comments
-            </span>
-          </a>
         </div>
       </div>
     </div>

@@ -3,31 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>05 | JavaScript Basics</title>
+    <title>08 | JavaScript Basics</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      const message1 = "Congratulations, you are a Design Engineer!"
-      const alertUser1 = () => {
-        window.alert(message1)
-      }
-      const message2 = "Congratulations, you are a UX Researcher!"
-      const alertUser2 = () => {
-        window.alert(message2)
-      }
-
-      const fruits = ["Apple", "Banana", "Pineapple", "Orange"]
-      console.log(fruits[0]) // returns "Apple"
-      console.log(fruits[2]) // returns "Pineapple"
-
-      const user = {
-        userName: "sekeidesign",
-        fullName: "PG Gonni",
-        favoriteFruit: "Pineapple",
-        followers: 21700
-      }
-      console.log(user.fullName) // returns "PG Gonni"
-      console.log(user["followers"]) // returns "21700"
-    </script>
   </head>
   <body>
     <div class="flex p-10 flex-col items-start gap-6">
@@ -37,7 +14,6 @@
       <img class="h-96 self-stretch rounded-xl object-cover" src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2406&q=80"></img>
       <div class="flex gap-6">
         <button onclick="alertUser1()" class="flex py-4 px-8 justify-center items-center rounded-full bg-blue-600 text-slate-50">Become a Design Engineer</button>
-        <button onclick="alertUser2()" class="flex py-4 px-8 justify-center items-center rounded-full border border-blue-600 text-blue-600">Become a UX Researcher</button>
       </div>
     </div>
   </body>

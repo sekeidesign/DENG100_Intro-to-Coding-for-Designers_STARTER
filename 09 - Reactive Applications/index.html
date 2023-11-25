@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>06 | Reactive Applications & Frameworks</title>
+    <title>09 | Reactive Applications & Frameworks</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
   </head>
   <body>
     <div class="flex p-10 flex-col items-center justify-center gap-6 h-screen">
@@ -19,7 +17,7 @@
         </button>
         <h1
           id="largeQuantity"
-          class="text-9xl font-semibold text-slate-800 w-40 text-center"
+          class="text-9xl font-semibold text-slate-800"
         ></h1>
         <button
           onclick="add()"
@@ -28,11 +26,11 @@
           ➕
         </button>
       </div>
-      <h2 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h2>
       <p class="fixed top-6 right-6">
         Your quantity is: <span id="smallQuantity"></span>
       </p>
     </div>
+
     <script>
       // Set a quantity variable to 0
       let quantity = 0;
