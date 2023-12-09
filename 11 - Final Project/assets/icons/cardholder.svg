@@ -1,0 +1,24 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7" clip-path="url(#clip0_1046_1568)">
+<path d="M325 87.5H75C61.1929 87.5 50 98.6929 50 112.5V287.5C50 301.307 61.1929 312.5 75 312.5H325C338.807 312.5 350 301.307 350 287.5V112.5C350 98.6929 338.807 87.5 325 87.5Z" stroke="url(#paint0_linear_1046_1568)" style="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 187.5H138.766C141.645 187.503 144.434 188.5 146.663 190.322C148.892 192.144 150.424 194.679 151 197.5C153.295 208.803 159.427 218.965 168.357 226.264C177.288 233.563 188.466 237.55 200 237.55C211.534 237.55 222.712 233.563 231.643 226.264C240.573 218.965 246.705 208.803 249 197.5C249.576 194.679 251.108 192.144 253.337 190.322C255.566 188.5 258.355 187.503 261.234 187.5H350" stroke="url(#paint1_linear_1046_1568)" style="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 137.5H350" stroke="url(#paint2_linear_1046_1568)" style="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1046_1568" x1="200" y1="87.5" x2="200" y2="312.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#334155" style="stop-color:#334155;stop-color:color(display-p3 0.2000 0.2549 0.3333);stop-opacity:1;"/>
+<stop offset="1" stop-color="#334155" stop-opacity="0" style="stop-color:none;stop-color:none;stop-opacity:0;"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1046_1568" x1="200" y1="187.5" x2="200" y2="237.55" gradientUnits="userSpaceOnUse">
+<stop stop-color="#334155" style="stop-color:#334155;stop-color:color(display-p3 0.2000 0.2549 0.3333);stop-opacity:1;"/>
+<stop offset="1" stop-color="#334155" stop-opacity="0" style="stop-color:none;stop-color:none;stop-opacity:0;"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1046_1568" x1="200" y1="137.5" x2="200" y2="138.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#334155" style="stop-color:#334155;stop-color:color(display-p3 0.2000 0.2549 0.3333);stop-opacity:1;"/>
+<stop offset="1" stop-color="#334155" stop-opacity="0" style="stop-color:none;stop-color:none;stop-opacity:0;"/>
+</linearGradient>
+<clipPath id="clip0_1046_1568">
+<rect width="400" height="400" fill="white" style="fill:white;fill:white;fill-opacity:1;"/>
+</clipPath>
+</defs>
+</svg>
